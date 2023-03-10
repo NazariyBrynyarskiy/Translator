@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Processor {
 
     public String getTranslation(String word) throws IOException {
-        File file = new File("/Users/nazariybrynyarsky/Desktop/Java/JavaEE/Translator/Translator/src/main/translations/en-ua.json");
+        File file = new File("/Users/nazariybrynyarsky/Desktop/Java/JavaEE/Translator/src/main/translations/en-ua.json");
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode rootNode = objectMapper.readTree(file);
         String translations;
